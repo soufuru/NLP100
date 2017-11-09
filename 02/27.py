@@ -12,18 +12,28 @@ import re
 import fileinput
 
 if __name__ == '__main__':
+
+    # p1 = re.compile(r"\[\[([^\[\]]+)\]\]")
+    p1 = re.compile(r".*?\[\[(.+)\]\]")
+    p2 = re.compile(r".*?\[\[[^\[\]]+\|(.+?)\]\]")
+
+    for line in fileinput.input("-"):
+
+        r = re.match(p1, line)
+        if r:
+            r1 = re.match(p2, r.group())
+            if r1:
+                print(r1.group(1))
+            else:
+                print(r.group(1))
+        # r1 = p2.sub("\1", line.rstrip())
+        # r = p1.sub("\1", r1)
+
+        # print(line)
+
+
+
     # result = {}
-
-    p1 = re.compile(r"\[\[(^[\]]+)\]\]")
-    p2 = re.compile(r"\[\[[^[|\]]+\|(.+)\]\]")
-
-    for file in fileinput.input("-"):
-        r = p2.sub("\1", file.rstrip())
-        r = p1.sub("\1", r)
-
-        print(r)
-
-
     #     for line in file.split("\n"):
     #         m = re.match("(?:.*\|)?(.+)\s=\s(.+)", line)
     #         tmp1 = ""

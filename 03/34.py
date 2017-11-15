@@ -22,11 +22,8 @@ if __name__ == '__main__':
     for mlist in mlist_lib.to_mlist(fileinput.input("-")):
         for i, line in enumerate(mlist):
             # 助詞の「の」があったら
-            m = repatter1.search(str(line))
-            if m:
+            if line["pos"] == "助詞" and line["base"] == "の":
                 # 「の」の前後の品詞を確認、両方共名詞なら抽出
-                m1 = repatter2.search(str(mlist[i-1]))
-                m2 = repatter2.search(str(mlist[i+1]))
-
-                if m1 and m2:
-                    print(m1.group(1) + "の" + m2.group(1))
+                if mlist[i-1]["pos"] == "名詞" and mlist[i+1]["pos"] == "名詞":
+                    # print(mlist[i-1]["surface"] + "の" + mlist[i+1]["surface"])
+                    print(mlist)

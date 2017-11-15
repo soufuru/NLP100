@@ -22,23 +22,52 @@
 """
 
 import fileinput
-import re
+from typing import Iterable
+
+
+def to_mlist(lines: Iterable[str]):
+    mlist = []
+    for line in lines:
+        s = line.rstrip()
+        if s == 'EOS':
+            ret = mlist
+            mlist = []
+            yield ret
+        else:
+            surface, feature_str = s.split("\t")
+            features = feature_str.split(",")
+            mlist.append({
+                "surface": surface,
+                "base": features[6],
+                "pos": features[0],
+                "pos1": features[1]
+            })
+
 
 if __name__ == '__main__':
-    lis = [{}]
-    i = 0
+    for mlist in to_mlist(fileinput.input("-")):
+        print(mlist)
 
-    for file in fileinput.input("-"):
-        m = re.match(r'EOS', file)
-        if m:
-            lis.append({})
-            i += 1
-        else:
-            line = re.split(r'[,\t\n]', file)
-            lis[i].update({"surface": line[0],
-                           "pos": line[1],
-                           "pos1": line[2],
-                           "base": line[7]}
-                          )
 
-    print(lis)
+
+# import fileinput
+# import re
+#
+# if __name__ == '__main__':
+#     lis = [{}]
+#     i = 0
+#
+#     for file in fileinput.input("-"):
+#         m = re.match(r'EOS', file)
+#         if m:
+#             lis.append({})
+#             i += 1
+#         else:
+#             line = re.split(r'[,\t\n]', file)
+#             lis[i].update({"surface": line[0],
+#                            "pos": line[1],
+#                            "pos1": line[2],
+#                            "base": line[7]}
+#                           )
+#
+#     print(lis)

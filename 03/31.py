@@ -9,12 +9,15 @@
 
 import fileinput
 import re
-teacher = __import__("teacher_30")
+mlist_lib = __import__("30")
 
 if __name__ == '__main__':
 
-    for mlist in teacher.to_mlist(fileinput.input("-")):
+    pattern = r"'surface': '(.+?)'.*'pos': '動詞'"
+    repatter = re.compile(pattern)
+
+    for mlist in mlist_lib.to_mlist(fileinput.input("-")):
         for line in mlist:
-            m = re.search(r"'surface': '(.+?)'.*'pos': '動詞'", str(line))
+            m = repatter.search(str(line))
             if m:
                 print(m.group(1))

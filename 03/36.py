@@ -8,8 +8,8 @@
 """
 
 import fileinput
-mlist_lib = __import__("30")
 
+mlist_lib = __import__("30")
 
 if __name__ == '__main__':
 
@@ -22,7 +22,14 @@ if __name__ == '__main__':
             else:
                 dictionary.update({mlist[i]["surface"]: 1})
 
+
+    lis = []
     # value(単語の出現数)でソート
-    for key, value in sorted(dictionary.items(), key=lambda x: x[1]):
-        print(key + "\t:" + str(value))
+    for key, value in sorted(dictionary.items(), key=lambda x: -x[1]):
+        lis.append(str(key) + "\t:" + str(value))
+        # print(key + "\t:" + str(value))
+
+    for i in range(10):
+        print(lis[i])
+
 

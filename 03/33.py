@@ -13,7 +13,6 @@ mlist_lib = __import__("30")
 
 if __name__ == '__main__':
 
-
     for mlist in mlist_lib.to_mlist(fileinput.input("-")):
         for line in mlist:
             if line["pos1"] == "サ変接続":

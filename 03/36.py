@@ -16,6 +16,8 @@ if __name__ == '__main__':
     dictionary = {}
 
     for mlist in mlist_lib.to_mlist(fileinput.input("-")):
+
+
         for i in range(len(mlist)):
             if mlist[i]["surface"] in dictionary.keys():
                 dictionary[mlist[i]["surface"]] += 1

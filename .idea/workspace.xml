@@ -39,7 +39,7 @@
       <file leaf-file-name="30.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/03/30.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="663">
+            <state relative-caret-position="0">
               <caret line="40" column="36" lean-forward="false" selection-start-line="40" selection-start-column="36" selection-end-line="40" selection-end-column="36" />
               <folding>
                 <element signature="e#364#380#0" expanded="true" />
@@ -101,8 +101,8 @@
       <file leaf-file-name="36.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/03/36.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+            <state relative-caret-position="289">
+              <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -111,10 +111,10 @@
       <file leaf-file-name="37.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/03/37.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="30" column="14" lean-forward="false" selection-start-line="30" selection-start-column="14" selection-end-line="30" selection-end-column="14" />
+            <state relative-caret-position="476">
+              <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
               <folding>
-                <element signature="e#109#127#0" expanded="true" />
+                <element signature="e#109#125#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -186,8 +186,8 @@
         <option value="$PROJECT_DIR$/03/32.py" />
         <option value="$PROJECT_DIR$/03/34.py" />
         <option value="$PROJECT_DIR$/03/35.py" />
-        <option value="$PROJECT_DIR$/03/36.py" />
         <option value="$PROJECT_DIR$/03/33.py" />
+        <option value="$PROJECT_DIR$/03/36.py" />
         <option value="$PROJECT_DIR$/03/37.py" />
       </list>
     </option>
@@ -416,7 +416,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="864" height="800" extended-state="0" />
+    <frame x="0" y="0" width="865" height="800" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287483" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -473,13 +473,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/00/04.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/00/02.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -784,7 +777,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/03/30.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
+        <state relative-caret-position="0">
           <caret line="40" column="36" lean-forward="false" selection-start-line="40" selection-start-column="36" selection-end-line="40" selection-end-column="36" />
           <folding>
             <element signature="e#364#380#0" expanded="true" />
@@ -810,18 +803,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/03/36.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+        <state relative-caret-position="289">
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/python3.6/site-packages/matplotlib/pyplot.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="2614" column="4" lean-forward="false" selection-start-line="2614" selection-start-column="4" selection-end-line="2614" selection-end-column="4" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/03/37.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="30" column="14" lean-forward="false" selection-start-line="30" selection-start-column="14" selection-end-line="30" selection-end-column="14" />
+        <state relative-caret-position="476">
+          <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
           <folding>
-            <element signature="e#109#127#0" expanded="true" />
+            <element signature="e#109#125#0" expanded="true" />
           </folding>
         </state>
       </provider>

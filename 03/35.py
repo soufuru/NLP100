@@ -14,9 +14,13 @@ mlist_lib = __import__("30")
 if __name__ == '__main__':
 
     for mlist in mlist_lib.to_mlist(fileinput.input("-")):
+        tmp = []
         for i in range(len(mlist)-1):
             # 名詞があったら
             if mlist[i]["pos"] == "名詞":
-                # 「の」の前後の品詞を確認、両方共名詞なら抽出
-                if mlist[i - 1]["pos"] == "名詞" and mlist[i + 1]["pos"] == "名詞":
-                    print(mlist[i-1]["surface"] + "の" + mlist[i+1]["surface"])
+                tmp.append(mlist[i]["surface"])
+            else:
+                if len(tmp) != 0:
+                    print("".join(tmp))
+                tmp = []
+

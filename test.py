@@ -24,7 +24,6 @@ if __name__ == '__main__':
     print(b2)
 
 
-
     str = "ab cd ef gh"
     str2 = str.split()
     print(str2[2][:1])

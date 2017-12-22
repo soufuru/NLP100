@@ -25,11 +25,8 @@ if __name__ == '__main__':
 
 
     # フォントを日本語に変更
-    # plt.rcParams["font.family"] = "AppleGothic"
-    # fontprop = matplotlib.font_manager.FontProperties(fname="/Library/Fonts/Arial Unicode.ttf")
-
-    # x軸の範囲を設定
-    # plt.xlim(xmin=1, xmax=20)
+    plt.rcParams["font.family"] = "AppleGothic"
+    fontprop = matplotlib.font_manager.FontProperties(fname="/Library/Fonts/Arial Unicode.ttf")
 
     # y軸の範囲を設定
     # plt.ylim([0, 7000])
@@ -37,7 +34,7 @@ if __name__ == '__main__':
     # x軸のラベルを無理やり設定
     # plt.xticks(range(1, 20), range(1, 20))
 
-    height = [height[i] for i in range(20)]
+    # height = [height[i] for i in range(20)]
 
     # 両対数グラフを生成
     plt.xscale("log")
@@ -45,9 +42,9 @@ if __name__ == '__main__':
     plt.plot(height, range(len(height)))
 
     # グラフの体裁を整える
-    # plt.title(u"ヒストグラム", fontdict={"fontproperties": fontprop})
-    # plt.xlabel(u"単語", fontdict={"fontproperties": fontprop})
-    # plt.ylabel(u"出現数", fontdict={"fontproperties": fontprop})
+    plt.title(u"両対数グラフ", fontdict={"fontproperties": fontprop})
+    plt.xlabel(u"単語", fontdict={"fontproperties": fontprop})
+    plt.ylabel(u"出現数", fontdict={"fontproperties": fontprop})
 
     # 両対数グラフを表示
     plt.show()
